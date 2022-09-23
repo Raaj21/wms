@@ -50,8 +50,10 @@
                                                 </td>
                                                 <td>
                                                     <div class="wt-actionbtn">
-                                                        <a href="javascript:void()" v-on:click.prevent="deleteUser({{$user->id}})" class="wt-deleteinfo wt-skillsaddinfo"><i class="fa fa-trash"></i></a>
+                                                        <a href="{{ url('profile/'.$user->slug) }}" class="wt-success wt-skillsaddinfo"><i class="lnr lnr-pencil"></i></a>
                                                         <a href="{{ url('profile/'.$user->slug) }}" class="wt-addinfo wt-skillsaddinfo"><i class="lnr lnr-eye"></i></a>
+                                                        <a href="javascript:void()" v-on:click.prevent="deleteUser({{$user->id}})" class="wt-deleteinfo wt-skillsaddinfo"><i class="fa fa-trash"></i></a>
+                                                        
                                                     </div>
                                                 </td>
                                             </tr>

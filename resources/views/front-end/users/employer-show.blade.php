@@ -209,7 +209,7 @@
                                                         <li><span><img src="{{{asset(App\Helper::getLocationFlag($job->location->flag))}}}" alt="{{{ trans('lang.location') }}}"> {{{ $job->location->title }}}</span></li>
                                                     @endif
                                                     <li><span><i class="far fa-folder wt-viewjobfolder"></i>{{{ trans('lang.type') }}} {{{$project_type}}}</span></li>
-                                                    <li><span><i class="far fa-clock wt-viewjobclock"></i>{{{ Helper::getJobDurationList($job->duration) }}}</span></li>
+                                                    <li><span><i class="far fa-clock wt-viewjobclock"></i> {{{ ($job->duration != '') ? Helper::getJobDurationList($job->duration) :'' }}}</span></li>
                                                     <li><span><i class="fa fa-tag wt-viewjobtag"></i>{{{ trans('lang.job_id') }}} {{{$job->code}}}</span></li>
 
                                                     @if (!empty($save_jobs) && in_array($job->id, $save_jobs))

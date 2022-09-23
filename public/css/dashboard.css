@@ -898,6 +898,7 @@ body{background: #f7f7f7;}
 }
 .wt-myskills li .wt-rightarea a + a{margin-left:10px; }
 .wt-addinfo{background: #3fabf3;}
+.wt-success{background: #5df33f;}
 .wt-deleteinfo{background: #ff5851;}
 .wt-myskills li .wt-rightarea a:hover,
 .wt-myskills li .wt-rightarea a:focus{color: #fff;}
